@@ -2,6 +2,7 @@ package game;
 
 import javax.swing.*;
 
+// The overseer class is in change of overseeing the interactions between the player the cell and the view.
 public class Overseer {
 
     private Cell _board;
@@ -26,6 +27,7 @@ public class Overseer {
         return JOptionPane.showOptionDialog(null, msg, title, JOptionPane.YES_NO_OPTION, JOptionPane.PLAIN_MESSAGE, null, null, 0);
     }
 
+    // This method creates the Menu that the player will interact with.
     public boolean menu() throws InterruptedException {
 
         String[] options = {"Exit", "Next Gen"};
