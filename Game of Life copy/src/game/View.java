@@ -1,6 +1,6 @@
 package game;
 
-
+// This class focuses on the view that the user will see when playing the game of life
 public class View {
 
     private Cell _board;
@@ -32,6 +32,7 @@ public class View {
 
 
 
+    // This method creates a String that is then printed and is what the user sees.
     public String drawView() {
 
         String MAP = "";
