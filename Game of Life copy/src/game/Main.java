@@ -1,7 +1,8 @@
 package game;
 
 import javax.swing.*;
-
+// My main class is what runs my actual program with a main method. It allows the player to quicky; select how many rows and col they want
+// the board to have.
 public class Main {
     public static void main(String[] args) throws InterruptedException {
 
