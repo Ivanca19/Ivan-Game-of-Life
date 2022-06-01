@@ -1,5 +1,5 @@
 package game;
-
+// This class defines a Cell object. The "Living" things that will be changing due to their environment in my game of life
 public class Cell {
 
     private boolean[][] _planet;
@@ -10,7 +10,8 @@ public class Cell {
     }
 
     public boolean[][] getBoard() { return _planet;}
-
+    
+    // this method kills all of the cells in the board
     public void turnOff() {
         for(int r = 0; r < _planet.length; r++) {
             for (int c = 0; c < _planet[r].length; c++) {
@@ -18,7 +19,8 @@ public class Cell {
             }
         }
     }
-
+    
+    // this method brings all of the cells to life on the board
     public void turnOn() {
         for(int r = 0; r < _planet.length; r++) {
             for (int c = 0; c < _planet[r].length; c++) {
@@ -27,6 +29,7 @@ public class Cell {
         }
     }
 
+    // this is the method that is called on every single cell that analyzes the cell's environment to determine whether the cell will live or die.
     public boolean live(int row, int col) {
         int cnt = 0;
 
@@ -71,6 +74,7 @@ public class Cell {
         return false;
     }
 
+    // this method randomly kills or brings to life a cell via a coin toss.
     public void randomize() {
         for(int r = 0; r < _planet.length; r++) {
             for (int c = 0; c < _planet[r].length; c++) {
